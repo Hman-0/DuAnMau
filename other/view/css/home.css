@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.product-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.product-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center align the product name */
+}
+
+.product-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Add gap between list items */
+}
+
+.product-info li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding-left: 5px; /* Dịch li sang trái 5px */
+}
+
+.product-info li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: left;
+    flex: 1; /* Cho phép phần này mở rộng để chiếm không gian còn lại */
+}
+
+.product-footer {
+    display: flex;
+    justify-content: center; /* Căn giữa nút trong footer */
+    padding: 20px; /* Khoảng cách quanh footer */
+    background-color: #f9f9f9; /* Màu nền cho footer (tuỳ chọn) */
+}
+
+.view-product {
+    display: inline-block;
+    background-color: #ff6b6b;
+    width: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; /* Căn giữa văn bản trong nút */
+    width: 100%; /* Làm cho nút chiếm toàn bộ chiều rộng của phần tử chứa */
+    box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến chiều rộng tổng */
+    margin-top: 10px; /* Thêm khoảng cách giữa nút và phần tử phía trên */
+}
+
+.view-product:hover {
+    background-color: #ff4b4b;
+}

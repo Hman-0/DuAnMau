@@ -1,0 +1,114 @@
+/* Container for centering the form */
+.content-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+/* Form container styling */
+.form-container {
+    width: 100%;
+    max-width: 1200px; /* Adjusted width to be responsive */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto; /* Center the form container */
+}
+
+/* Grid layout for product information */
+.thongtinsanpham {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Added gap between grid items */
+    margin: 0 auto; /* Center grid layout */
+    padding: 0 20px; /* Added padding for responsiveness */
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #757373;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%; /* Ensure responsiveness */
+    max-width: 300px; /* Limit width for better appearance */
+    padding: 10px;
+    margin-bottom: 20px; /* Increased margin for more space */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%; /* Adjust button width */
+    max-width: 200px; /* Ensure button does not stretch too much */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0888ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Center button horizontally */
+    display: block;
+}
+
+button[type="submit"]:hover {
+    background-color: #0863c4;
+}
+
+/* Preview image container */
+.preview-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    height: 200px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    margin: 0 auto; /* Center preview image */
+}
+
+.preview-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Bottom section layout */
+.bottom {
+    display: flex;
+    gap: 60px; /* Added gap between elements */
+    margin-top: 20px; /* Adjusted margin for spacing */
+}
+
+/* Description styling */
+.description {
+    min-width: 660px;
+    width: 100%; /* Ensure responsiveness */
+    max-width: 620px;
+    height: 300px;
+}
